@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
-import { AnimatedLogo } from "@/animation/AnimatedLogo";
+import { WahabLogo } from "@/animation/WahabLogo";
 import { classNames } from "@/utility/classNames";
 import MenuLogo from "@/layout/Navbar/MenuButton";
 import ThemeSwitch from "@/layout/Navbar/ThemeSwitch";
@@ -44,7 +44,7 @@ export default function Navbar(props: TNavbar) {
           aria-label="Return to home page"
         >
           <div className="relative h-12 w-12 sm:h-14 sm:w-14">
-            <AnimatedLogo />
+            <WahabLogo />
           </div>
         </Link>
         <nav className="hidden items-center gap-2 rounded-full px-2 py-2 shadow-md ring-1 ring-zinc-200 backdrop-blur-md dark:ring-teal-600/50 md:flex">
