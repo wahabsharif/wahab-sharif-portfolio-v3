@@ -1,16 +1,16 @@
 import Image from "next/image";
 import {
   SiExpress,
-  SiSocketdotio,
-  SiPrisma,
+  // SiSocketdotio,
+  // SiPrisma,
   SiNextdotjs,
-  SiFlask,
+  // SiFlask,
 } from "react-icons/si";
 import {
   FramerMotionIcon,
   GithubIcon,
   ReactRouterDomIcon,
-  VitePwaIcon,
+  // VitePwaIcon,
 } from "@/components/Icons";
 import { SkillPillProps } from "@/components/Skills";
 
@@ -67,7 +67,7 @@ export const LANGUAGES: SkillPillProps[] = [
 
 export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
   {
-    name: "Reactjs",
+    name: "React.js",
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
         <Image alt="reactjs logo" src="/icons/reactjs.svg" fill />
@@ -75,23 +75,23 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
     ),
   },
   {
-    name: "Nextjs",
+    name: "Next.js",
     icon: <SiNextdotjs className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
   {
     name: "React-router-dom",
     icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
+  // {
+  //   name: "Redux",
+  //   icon: (
+  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //       <Image alt="redux logo" src="/icons/redux.svg" fill />
+  //     </span>
+  //   ),
+  // },
   {
-    name: "Redux",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="redux logo" src="/icons/redux.svg" fill />
-      </span>
-    ),
-  },
-  {
-    name: "Tailwindcss",
+    name: "Tailwind CSS",
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
         <Image alt="tailwindcss logo" src="/icons/tailwindcss.svg" fill />
@@ -118,15 +118,15 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
       </span>
     ),
   },
-  {
-    name: "Vite pwa",
-    icon: <VitePwaIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
-  },
+  // {
+  //   name: "Vite pwa",
+  //   icon: <VitePwaIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  // },
 ];
 
 export const BACKEND_PILL: SkillPillProps[] = [
   {
-    name: "Nodejs",
+    name: "Node.js",
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
         <Image alt="nodejs logo" src="/icons/nodejs.svg" fill />
@@ -134,17 +134,17 @@ export const BACKEND_PILL: SkillPillProps[] = [
     ),
   },
   {
-    name: "Express",
+    name: "Express.js",
     icon: <SiExpress className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
-  {
-    name: "Socket.io",
-    icon: <SiSocketdotio className="h-5 w-5 sm:h-8 sm:w-8" />,
-  },
-  {
-    name: "Flask",
-    icon: <SiFlask className="h-5 w-5 sm:h-8 sm:w-8" />,
-  },
+  // {
+  //   name: "Socket.io",
+  //   icon: <SiSocketdotio className="h-5 w-5 sm:h-8 sm:w-8" />,
+  // },
+  // {
+  //   name: "Flask",
+  //   icon: <SiFlask className="h-5 w-5 sm:h-8 sm:w-8" />,
+  // },
 ];
 
 export const DATABASE_ORM_PILL: SkillPillProps[] = [
@@ -156,20 +156,20 @@ export const DATABASE_ORM_PILL: SkillPillProps[] = [
       </span>
     ),
   },
-  {
-    name: "PostgreSQL",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="postgresql logo" src="/icons/postgresql.svg" fill />
-      </span>
-    ),
-  },
-  {
-    name: "Prisma",
-    icon: (
-      <SiPrisma className="h-5 w-5 fill-[#2d3748] dark:fill-zinc-100 sm:h-8 sm:w-8" />
-    ),
-  },
+  // {
+  //   name: "PostgreSQL",
+  //   icon: (
+  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //       <Image alt="postgresql logo" src="/icons/postgresql.svg" fill />
+  //     </span>
+  //   ),
+  // },
+  // {
+  //   name: "Prisma",
+  //   icon: (
+  //     <SiPrisma className="h-5 w-5 fill-[#2d3748] dark:fill-zinc-100 sm:h-8 sm:w-8" />
+  //   ),
+  // },
 ];
 
 export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [

@@ -35,6 +35,8 @@ export default function Navbar(props: TNavbar) {
     router.push(href);
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <header className="sticky top-0 z-50 mt-2 px-6 py-8 sm:mt-8 sm:px-14 md:px-20">
       <div className="mx-auto flex items-center justify-between lg:max-w-7xl">
@@ -123,8 +125,7 @@ export default function Navbar(props: TNavbar) {
                   ))}
                   <ThemeSwitch setClose={setIsModalOpen} />
                 </div>
-                <div className="absolute bottom-0 py-6">©2023 Wahab Sharif</div>
-              </Dialog.Panel>
+                <div className="absolute bottom-0 py-6">©{currentYear} Wahab Sharif</div>              </Dialog.Panel>
             </Transition.Child>
           </div>
         </Dialog>
