@@ -1,10 +1,10 @@
-import { Fragment, useEffect, useRef, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { Field, Form, Formik, FieldInputProps, FieldMetaProps } from "formik";
-import * as Yup from "yup";
 import { CheckIcon, DangerIcon, MailIcon } from "@/components/Icons";
 import { Toast } from "@/components/Toast";
 import { classNames } from "@/utility/classNames";
+import { Dialog, Transition } from "@headlessui/react";
+import { Field, FieldInputProps, FieldMetaProps, Form, Formik } from "formik";
+import { Fragment, useEffect, useRef, useState } from "react";
+import * as Yup from "yup";
 
 export const mailValidationSchema = Yup.object({
   email: Yup.string().email("Invalid email").required("Email required"),
@@ -103,8 +103,8 @@ export function ContactForm() {
             showToast.type === "PASS"
               ? "bg-teal-500"
               : showToast.type === "RATE_LIMIT"
-              ? "bg-yellow-500"
-              : "bg-red-600",
+                ? "bg-yellow-500"
+                : "bg-red-600",
           )}
         >
           <div className="flex w-full max-w-xs items-center gap-2">
@@ -118,8 +118,8 @@ export function ContactForm() {
               {showToast.type === "PASS"
                 ? "Mail sent"
                 : showToast.type === "RATE_LIMIT"
-                ? "Only 5 mail per hour"
-                : "Mail failed"}
+                  ? "Only 5 mail per hour"
+                  : "Mail failed"}
             </span>
           </div>
         </Toast>
