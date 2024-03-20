@@ -1,13 +1,13 @@
-import { Fragment, useState } from "react";
+import { WahabLogo } from "@/animation/WahabLogo";
+import MenuLogo from "@/layout/Navbar/MenuButton";
+import ThemeSwitch from "@/layout/Navbar/ThemeSwitch";
+import { classNames } from "@/utility/classNames";
+import { Dialog, Transition } from "@headlessui/react";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
-import { AnimatePresence, motion } from "framer-motion";
-import { WahabLogo } from "@/animation/WahabLogo";
-import { classNames } from "@/utility/classNames";
-import MenuLogo from "@/layout/Navbar/MenuButton";
-import ThemeSwitch from "@/layout/Navbar/ThemeSwitch";
-import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
 
 export type NavbarRoute = {
   title: string;

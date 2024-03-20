@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 type ThemeSwitchProps = {
   setClose?: Dispatch<SetStateAction<boolean>>;
