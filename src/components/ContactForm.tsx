@@ -172,9 +172,9 @@ export function ContactForm() {
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0 top-full"
-              enterTo="opacity-100 top-16"
+              enterTo="opacity-100 top-1"
               leave="ease-in duration-200"
-              leaveFrom="opacity-100 top-16"
+              leaveFrom="opacity-100 top-1"
               leaveTo="opacity-0 top-full"
             >
               <Dialog.Panel className="absolute m-4 w-[95%] max-w-xl overflow-y-auto rounded-2xl border-2 border-teal-100/20 bg-teal-600 px-6 py-8 shadow-lg shadow-teal-200/10 dark:bg-teal-700 md:px-10 md:py-16">
