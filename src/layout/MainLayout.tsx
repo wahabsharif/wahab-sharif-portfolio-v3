@@ -4,6 +4,7 @@ import { classNames } from "@/utility/classNames";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
 import { ReactNode } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function MainLayout(props: MainLayoutProps) {
       <div className={classNames("min-h-screen", montserrat.className)}>
         <Navbar routes={routes} />
         <main>{props.children}</main>
+        <SpeedInsights />
       </div>
       <Footer />
     </>

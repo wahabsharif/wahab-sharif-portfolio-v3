@@ -1,7 +1,6 @@
 import MainLayout from "@/layout/MainLayout";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
@@ -22,7 +21,6 @@ export default function App({ Component, pageProps }: AppProps) {
         </MainLayout>
       </ThemeProvider>
       <Analytics />
-      <SpeedInsights />
     </>
   );
 }
