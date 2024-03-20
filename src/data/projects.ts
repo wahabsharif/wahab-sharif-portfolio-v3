@@ -9,8 +9,8 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
     href: "/projects",
     tags: ["NextJs", "CSS", "NodeJs","Vercel"],
     image: {
-      LIGHT: "/images/projects/castle-marketing/castle-marketing-banner.png",
-      DARK: "/images/projects/castle-marketing/castle-marketing-banner.png",
+      LIGHT: "/images/projects/castle-marketing/castle-marketing-banner.webp",
+      DARK: "/images/projects/castle-marketing/castle-marketing-banner.webp",
     },
   },
   {
@@ -25,8 +25,8 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
       "Vercel",
     ],
     image: {
-      LIGHT: "/images/projects/aeon-marketing/aeon-marketing-banner.png",
-      DARK: "/images/projects/aeon-marketing/aeon-marketing-banner.png",
+      LIGHT: "/images/projects/aeon-marketing/aeon-marketing-banner.webp",
+      DARK: "/images/projects/aeon-marketing/aeon-marketing-banner.webp",
     },
   },
   {
@@ -35,8 +35,8 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
     href: "/projects",
     tags: ["NextJs", "ThreeJs","NodeJs", "CSS", "Vercel"],
     image: {
-      LIGHT: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.png",
-      DARK: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.png",
+      LIGHT: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.webp",
+      DARK: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.webp",
     },
   },
 ];
@@ -46,10 +46,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "My Previous Portfolio",
     favicon: "/images/projects/logos/wahab-sharif-v2.ico",
     imageUrl: [
-      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.png",
-      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-skills.png",
-      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-projects.png",
-      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-contact.png",
+      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.webp",
+      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-skills.webp",
+      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-projects.webp",
+      "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-contact.webp",
     ],
     description:
       "Employing Next.js, Three.js, Node.js, and CSS, I've meticulously developed my personal portfolio. This platform serves as a testament to my proficiency in web development, featuring dynamic and visually stunning designs that highlight my skills and creativity, ensuring an engaging user experience for visitors and potential clients alike.",
@@ -60,10 +60,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "Castle Marketing",
     favicon: "/images/projects/logos/castle-marketing.ico",
     imageUrl: [
-      "/images/projects/castle-marketing/castle-marketing-banner.png",
-      "/images/projects/castle-marketing/castle-marketing-investment.png",
-      "/images/projects/castle-marketing/castle-marketing-contact.png",
-      "/images/projects/castle-marketing/castle-marketing-footer.png",
+      "/images/projects/castle-marketing/castle-marketing-banner.webp",
+      "/images/projects/castle-marketing/castle-marketing-investment.webp",
+      "/images/projects/castle-marketing/castle-marketing-contact.webp",
+      "/images/projects/castle-marketing/castle-marketing-footer.webp",
     ],
     description:
       "A portfolio for a real estate company specializing in housing societies and commercial projects. This comprehensive showcase highlights their diverse range of properties, emphasizing their expertise in both residential and commercial developments, catering to the varied needs of clients seeking quality housing and investment opportunities.",
@@ -74,9 +74,9 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "Beacon Techh",
     favicon: "/images/projects/logos/beacontechh.ico",
     imageUrl: [
-      "/images/projects/beacontechh/beacon-techh-services.png",
-      "/images/projects/beacontechh/beacon-techh-banner.png",
-      "/images/projects/beacontechh/beacon-techh-footer.png",
+      "/images/projects/beacontechh/beacon-techh-services.webp",
+      "/images/projects/beacontechh/beacon-techh-banner.webp",
+      "/images/projects/beacontechh/beacon-techh-footer.webp",
     ],
     description:
       "A digital agency provides a range of services including software development, video production, and graphic design, among others. With a focus on innovation and expertise, it meets diverse digital requirements, delivering quality solutions tailored to clients' specific needs, ensuring excellence in every aspect of their digital endeavors.",
@@ -87,10 +87,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "Aeon Marketing",
     favicon: "/images/projects/logos/aeon-marketing.ico",
     imageUrl: [
-      "/images/projects/aeon-marketing/aeon-marketing-banner.png",
-      "/images/projects/aeon-marketing/aeon-marketing-intro.png",
-      "/images/projects/aeon-marketing/aeon-marketing-gallary.png",
-      "/images/projects/aeon-marketing/aeon-marketing-footer.png",
+      "/images/projects/aeon-marketing/aeon-marketing-banner.webp",
+      "/images/projects/aeon-marketing/aeon-marketing-intro.webp",
+      "/images/projects/aeon-marketing/aeon-marketing-gallary.webp",
+      "/images/projects/aeon-marketing/aeon-marketing-footer.webp",
     ],
     description:
       "A real estate company portfolio focuses on housing societies and commercial projects, showcasing a wide array of properties. It underscores their proficiency in both residential and commercial developments, meeting the diverse needs of clients seeking top-tier housing and investment prospects.",
