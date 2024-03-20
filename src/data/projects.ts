@@ -1,6 +1,6 @@
 import { ProjectCardProps } from "@/components/ProjectCard";
 import { ProjectShowcaseListProps } from "@/components/ProjectShowcaseList";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
+// import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
   {
@@ -84,41 +84,43 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     liveWebsiteHref: "https://beacontechh.com/",
   },
   {
-    name: "My portfolio",
-    favicon: "/favicon.ico",
+    name: "Aeon Marketing",
+    favicon: "/images/projects/logos/aeon-marketing.ico",
     imageUrl: [
-      "/images/projects/portfolioDark.webp",
-      "/images/projects/portfolioLight.webp",
+      "/images/projects/aeon-marketing/aeon-marketing-banner.png",
+      "/images/projects/aeon-marketing/aeon-marketing-intro.png",
+      "/images/projects/aeon-marketing/aeon-marketing-gallary.png",
+      "/images/projects/aeon-marketing/aeon-marketing-footer.png",
     ],
     description:
-      "My personal portfolio website made using Nextjs, tailwindcss and framer motion.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/amitchauhan-v2",
-    liveWebsiteHref: siteMetadata.siteUrl,
+      "A real estate company portfolio focuses on housing societies and commercial projects, showcasing a wide array of properties. It underscores their proficiency in both residential and commercial developments, meeting the diverse needs of clients seeking top-tier housing and investment prospects.",
+    sourceCodeHref: "https://github.com/wahabsharif/Aeon-Marketing-Next-js-1.0",
+    liveWebsiteHref: "https://www.aeonmarketing.com.pk/",
   },
-  {
-    name: "Covid Tracker",
-    favicon: "/images/projects/logos/covidtracker.ico",
-    imageUrl: [
-      "/images/projects/covidTracker.webp",
-      "/images/projects/covidTrackerMap.webp",
-      "/images/projects/covidTrackerTable.webp",
-    ],
-    description:
-      "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
-    sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
-    liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
-  },
-  {
-    name: "Stock predictor",
-    favicon: "/images/projects/logos/stockpredictor.ico",
-    imageUrl: [
-      "/images/projects/stockPredictor.webp",
-      "/images/projects/stockPredictorCandleChart.webp",
-      "/images/projects/stockPredictorCompareChart.webp",
-      "/images/projects/stockPredictorLineChart.webp",
-    ],
-    description:
-      "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
-    sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
-  },
+  // {
+  //   name: "Covid Tracker",
+  //   favicon: "/images/projects/logos/covidtracker.ico",
+  //   imageUrl: [
+  //     "/images/projects/covidTracker.webp",
+  //     "/images/projects/covidTrackerMap.webp",
+  //     "/images/projects/covidTrackerTable.webp",
+  //   ],
+  //   description:
+  //     "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
+  //   sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
+  //   liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
+  // },
+  // {
+  //   name: "Stock predictor",
+  //   favicon: "/images/projects/logos/stockpredictor.ico",
+  //   imageUrl: [
+  //     "/images/projects/stockPredictor.webp",
+  //     "/images/projects/stockPredictorCandleChart.webp",
+  //     "/images/projects/stockPredictorCompareChart.webp",
+  //     "/images/projects/stockPredictorLineChart.webp",
+  //   ],
+  //   description:
+  //     "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
+  //   sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
+  // },
 ];

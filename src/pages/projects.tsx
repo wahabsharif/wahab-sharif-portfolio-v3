@@ -1,8 +1,8 @@
-import { NextSeo } from "next-seo";
+import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 import ProjectCard from "@/components/ProjectCard";
 import { PROJECTS_CARD } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
-import CursorTrailCanvas from "@/components/CursorTrailCanvas";
+import { NextSeo } from "next-seo";
 
 export default function Projects() {
   return (
@@ -46,7 +46,7 @@ export default function Projects() {
           <h1 className="text-2xl font-semibold md:text-4xl">Projects</h1>
           <div className="my-2">
             <span className="text-sm">
-              Here are some of the projects I&apos;d like to share
+              Here are a few projects I'd like to showcase.
             </span>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
@@ -56,11 +56,10 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center md:mt-28">
             <span className="text-xl font-bold md:text-2xl">
-              I am currently building new projects and learning backend
-              development to expand my skill set beyond frontend.
+              Currently, I'm constructing new projects and bolstering my backend development expertise to broaden my skill set beyond frontend development.
             </span>
             <p className="mt-10 text-base md:text-xl">
-              Visit my github to see some of the latest projects{" "}
+              Visit my GitHub to see some of the latest projects{" "}
               <a
                 href={`${siteMetadata.github}?tab=repositories`}
                 target="_blank"
