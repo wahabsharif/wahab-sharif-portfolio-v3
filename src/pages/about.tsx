@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 import FadeRight from "@/animation/FadeRight";
 import FadeUp from "@/animation/FadeUp";
 import { AnimatePresence } from "framer-motion";
@@ -12,6 +13,10 @@ import { siteMetadata } from "@/data/siteMetaData.mjs";
 export default function About() {
   return (
     <>
+      <CursorTrailCanvas
+        color="hsla(183, 64%, 27%, 0.4)"
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
+      />
       <NextSeo
         title="About Wahab Sharif | React and Frontend Developer"
         description="Learn more about Wahab Sharif, a dedicated React and Frontend Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."

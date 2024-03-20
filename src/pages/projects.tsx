@@ -2,10 +2,15 @@ import { NextSeo } from "next-seo";
 import ProjectCard from "@/components/ProjectCard";
 import { PROJECTS_CARD } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 
 export default function Projects() {
   return (
     <>
+      <CursorTrailCanvas
+        color="hsla(183, 64%, 27%, 0.4)"
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
+      />
       <NextSeo
         title="Projects by Wahab Sharif - React and Frontend Developer Portfolio"
         description="Explore a collection of projects by Wahab Sharif, a seasoned React and Frontend Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
