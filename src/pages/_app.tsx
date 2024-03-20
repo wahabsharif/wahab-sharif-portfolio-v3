@@ -1,11 +1,11 @@
 import MainLayout from "@/layout/MainLayout";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 // Import the types for Next.js
@@ -19,8 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <MainLayout>
           <AnimatePresence mode="wait" initial={false}>
             <Component key={router.asPath} {...pageProps} />
-            <SpeedInsights />
           </AnimatePresence>
+          <SpeedInsights />
         </MainLayout>
       </ThemeProvider>
       <Analytics />
