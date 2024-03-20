@@ -125,7 +125,8 @@ export default function Navbar(props: TNavbar) {
                   ))}
                   <ThemeSwitch setClose={setIsModalOpen} />
                 </div>
-                <div className="absolute bottom-0 py-6">©{currentYear} Wahab Sharif</div>              </Dialog.Panel>
+                <div className="absolute bottom-0 py-6">©{currentYear} Wahab Sharif</div>
+              </Dialog.Panel>
             </Transition.Child>
           </div>
         </Dialog>

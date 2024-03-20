@@ -7,6 +7,7 @@ import {
   LANGUAGES,
   LIBRARY_FRAMEWORK,
   TOOLS_TECHNOLOGIES,
+  OTHER_TROLLINGS,
 } from "@/data/skills";
 import { useScreenBreakpoint } from "@/hooks/useScreenBreakpoint";
 import { useDebounceValue } from "@/hooks/useDebounceValue";
@@ -117,6 +118,26 @@ export default function Skills() {
             </span>
             <div className="mt-2 flex flex-wrap gap-3">
               {TOOLS_TECHNOLOGIES.map((pill, index) => (
+                <FadeRight
+                  key={`tools-techs-${index}`}
+                  duration={0.4}
+                  delay={0.1 + index * 0.1}
+                  whileInView={!isMobileDebonced}
+                  className="-z-20"
+                >
+                  <SkillPill {...pill} />
+                </FadeRight>
+              ))}
+            </div>
+          </div>
+        </AnimatePresence>
+        <AnimatePresence>
+          <div className="mt-4">
+            <span className="text-xs font-semibold sm:text-sm">
+              Other Trollings
+            </span>
+            <div className="mt-2 flex flex-wrap gap-3">
+              {OTHER_TROLLINGS.map((pill, index) => (
                 <FadeRight
                   key={`tools-techs-${index}`}
                   duration={0.4}

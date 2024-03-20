@@ -210,3 +210,54 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
     ),
   },
 ];
+
+export const OTHER_TROLLINGS: SkillPillProps[] = [
+  {
+    name: "Linux",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="linux logo" src="/icons/linux.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Kali Linux",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="linux logo" src="/icons/kali-linux.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Ubuntu",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="ubuntu logo" src="/icons/ubuntu.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Adobe Photoshop",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="photoshop logo" src="/icons/adobe-photoshop.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="illustrator logo" src="/icons/adobe-illustrator.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Figma",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="figma logo" src="/icons/figma.svg" fill />
+      </span>
+    ),
+  },
+];
