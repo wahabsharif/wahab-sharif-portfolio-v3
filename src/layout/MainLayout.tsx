@@ -21,8 +21,9 @@ export default function MainLayout(props: MainLayoutProps) {
     <>
       <div className={classNames("min-h-screen", montserrat.className)}>
         <Navbar routes={routes} />
-        <main>{props.children}</main>
-        <SpeedInsights />
+        <main>{props.children}
+          <SpeedInsights />
+        </main>
       </div>
       <Footer />
     </>
