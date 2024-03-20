@@ -1,5 +1,3 @@
-import { Instagram } from "@/components/Icons";
-
 export const siteMetadata = {
   title: "Wahab Sharif Portfolio",
   author: "Wahab Sharif",

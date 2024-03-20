@@ -2,35 +2,35 @@ import { TShowCaseListDetatils } from "@/components/ShowCaseList";
 
 export const EXPERIENCE: TShowCaseListDetatils[] = [
   {
-    title: "Reactjs Frontend Developer",
+    title: "Full Stack Developer",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Beacon Techh",
+      href: "https://beacontechh.com/",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "July 2023 - Present",
+    location: "Islamabad",
+    description: "Desktop/Mobile App development.",
   },
   {
-    title: "Engineering Trainee",
+    title: "Front End Developer",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "Beacon Techh",
+      href: "https://beacontechh.com/",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    date: "June 2020 - July 2023",
+    location: "Islamabad",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Contributed to team updating codebases and learning web dev.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Web Developer",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Fiver / UpWork",
+      href: "",
     },
     date: "Winter - 2022",
     location: "Remote",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "I Created the stunning Ux/Ui module.",
   },
 ];

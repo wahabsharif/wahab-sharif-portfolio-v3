@@ -5,8 +5,8 @@ import FadeUp from "@/animation/FadeUp";
 import { AnimatePresence } from "framer-motion";
 import ShowCaseList from "@/components/ShowCaseList";
 import { EXPERIENCE } from "@/data/experience";
-import { EDUCATION } from "@/data/education";
-import heroProfileImg from "@/public/images/heroProfile.png";
+// import { EDUCATION } from "@/data/education";
+import heroProfileImg from "@/public/images/wahab-pic-neon-1.png";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function About() {
@@ -65,16 +65,12 @@ export default function About() {
             </FadeUp>
             <FadeUp key="description-1" duration={0.6} delay={0.2}>
               <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-                I turn vision into reality with code. Whether I&apos;m working
-                on a website or any digital product, I bring my commitment to
-                design excellence and user-centered thinking to every project I
-                work on.
+                I transform ideas into tangible digital experiences through coding. Whether it's a website or any digital product, I bring a dedicated focus on design quality and user-centric principles to each project I undertake.
               </p>
             </FadeUp>
             <FadeUp key="description-2" duration={0.6} delay={0.4}>
               <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-                Explore my latest projects showcasing my expertise in Reactjs,
-                Nextjs, Javascript, Typescript and web development.
+                Discover my most recent projects demonstrating my proficiency in React.js, Next.js, JavaScript, TypeScript, and web development.
               </p>
             </FadeUp>
             <FadeRight
@@ -87,18 +83,18 @@ export default function About() {
                 <Image
                   className="-z-10 h-full w-full bg-cover bg-no-repeat"
                   alt="Indian flag"
-                  src="https://flagcdn.com/in.svg"
+                  src="https://flagcdn.com/pk.svg"
                   width={15}
                   height={15}
                 />
               </div>
-              <span className="text-lg font-medium">Mumbai, India</span>
+              <span className="text-lg font-medium">Islamabad, Pakistan.</span>
             </FadeRight>
           </AnimatePresence>
         </div>
       </div>
       <ShowCaseList title="Experience" details={EXPERIENCE} />
-      <ShowCaseList title="Education" details={EDUCATION} />
+      {/* <ShowCaseList title="Education" details={EDUCATION} /> */}
     </>
   );
 }
