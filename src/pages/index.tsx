@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
+const TimeTracker = dynamic(() => import("@/components/TimeTracker"), { ssr: true });
 const Skills = dynamic(() => import("@/components/Skills"), { ssr: true });
 const Project = dynamic(() => import("@/components/ProjectShowcase"), {
   ssr: true,
@@ -56,6 +57,7 @@ export default function Home() {
         )}
       </Head>
       <Hero />
+      <TimeTracker />
       <Skills />
       <Project projects={PROJECT_SHOWCASE} />
     </>

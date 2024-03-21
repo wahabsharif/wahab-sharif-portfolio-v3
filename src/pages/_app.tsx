@@ -19,8 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <MainLayout>
           <AnimatePresence mode="wait" initial={false}>
             <Component key={router.asPath} {...pageProps} />
+            <SpeedInsights />
           </AnimatePresence>
-          <SpeedInsights />
         </MainLayout>
       </ThemeProvider>
       <Analytics />
