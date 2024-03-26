@@ -78,10 +78,10 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
     name: "Next.js",
     icon: <SiNextdotjs className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
-  {
-    name: "React-router-dom",
-    icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
-  },
+  // {
+  //   name: "React-router-dom",
+  //   icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  // },
   // {
   //   name: "Redux",
   //   icon: (
@@ -185,14 +185,14 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
     name: "Github",
     icon: <GithubIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
-  {
-    name: "Docker",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="docker logo" src="/icons/docker.svg" fill />
-      </span>
-    ),
-  },
+  // {
+  //   name: "Docker",
+  //   icon: (
+  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //       <Image alt="docker logo" src="/icons/docker.svg" fill />
+  //     </span>
+  //   ),
+  // },
   {
     name: "Postman",
     icon: (
