@@ -78,14 +78,30 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
     name: "Next.js",
     icon: <SiNextdotjs className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
+  {
+    name: "Vue.js",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="VueJs logo" src="/icons/vue-js-icon.png" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Nuxt.js",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="NuxtJs logo" src="/icons/nuxt-js-icon.png" fill />
+      </span>
+    ),
+  },
   // {
   //   name: "React-router-dom",
-  //   icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  //   icon: <ReactRouterDomIcon className="w-5 h-5 sm:h-8 sm:w-8" />,
   // },
   // {
   //   name: "Redux",
   //   icon: (
-  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
   //       <Image alt="redux logo" src="/icons/redux.svg" fill />
   //     </span>
   //   ),
@@ -120,7 +136,7 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
   },
   // {
   //   name: "Vite pwa",
-  //   icon: <VitePwaIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  //   icon: <VitePwaIcon className="w-5 h-5 sm:h-8 sm:w-8" />,
   // },
 ];
 
@@ -139,11 +155,11 @@ export const BACKEND_PILL: SkillPillProps[] = [
   },
   // {
   //   name: "Socket.io",
-  //   icon: <SiSocketdotio className="h-5 w-5 sm:h-8 sm:w-8" />,
+  //   icon: <SiSocketdotio className="w-5 h-5 sm:h-8 sm:w-8" />,
   // },
   // {
   //   name: "Flask",
-  //   icon: <SiFlask className="h-5 w-5 sm:h-8 sm:w-8" />,
+  //   icon: <SiFlask className="w-5 h-5 sm:h-8 sm:w-8" />,
   // },
 ];
 
@@ -159,7 +175,7 @@ export const DATABASE_ORM_PILL: SkillPillProps[] = [
   // {
   //   name: "PostgreSQL",
   //   icon: (
-  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
   //       <Image alt="postgresql logo" src="/icons/postgresql.svg" fill />
   //     </span>
   //   ),
@@ -188,7 +204,7 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
   // {
   //   name: "Docker",
   //   icon: (
-  //     <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
   //       <Image alt="docker logo" src="/icons/docker.svg" fill />
   //     </span>
   //   ),
