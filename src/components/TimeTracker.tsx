@@ -20,8 +20,8 @@ export default function TimeTracker(): JSX.Element {
         (currentTime.getTime() - startDate.getTime()) / 1000,
       ); // Total elapsed seconds
       const years = currentTime.getFullYear() - startDate.getFullYear();
-      const months = currentTime.getMonth() - startDate.getMonth() + 12 * years;
-      const days = Math.floor(elapsedTime / (3600 * 24));
+      const months = currentTime.getMonth() - startDate.getMonth();
+      const days = Math.floor(elapsedTime / (360000 * 24));
       const hours = Math.floor((elapsedTime % (3600 * 24)) / 3600);
       const minutes = Math.floor((elapsedTime % 3600) / 60);
       const seconds = elapsedTime % 60;
