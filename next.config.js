@@ -1,3 +1,4 @@
+/* eslint-env es6 */
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
