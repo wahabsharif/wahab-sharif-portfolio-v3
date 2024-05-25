@@ -56,14 +56,16 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center md:mt-28">
             <span className="text-xl font-bold md:text-2xl">
-              Currently, I'm constructing new projects and bolstering my backend development expertise to broaden my skill set beyond frontend development.
+              Currently, I'm constructing new projects and bolstering my backend
+              development expertise to broaden my skill set beyond frontend
+              development.
             </span>
             <p className="mt-10 text-base md:text-xl">
               Visit my GitHub to see some of the latest projects{" "}
               <a
                 href={`${siteMetadata.github}?tab=repositories`}
                 target="_blank"
-                className="font-medium text-tera-500 underline underline-offset-2 hover:text-teal-600 dark:text-teal-400"
+                className="text-3xl font-extrabold text-tera-500 underline underline-offset-2 hover:text-teal-600 dark:text-teal-400"
               >
                 Github
               </a>
