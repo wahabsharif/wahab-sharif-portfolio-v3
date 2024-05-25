@@ -5,38 +5,32 @@ import { ProjectShowcaseListProps } from "@/components/ProjectShowcaseList";
 export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
   {
     index: 0,
-    title: "Castle Marketing",
+    title: "Step By Step",
     href: "/projects",
-    tags: ["NextJs", "CSS", "NodeJs","Vercel"],
+    tags: ["Next Js", "Node Js", "Express Js", "Mongo db", "Vercel"],
     image: {
-      LIGHT: "/images/projects/castle-marketing/castle-marketing-banner.webp",
-      DARK: "/images/projects/castle-marketing/castle-marketing-banner.webp",
+      LIGHT: "/images/projects/step-by-step/step-by-step-home-banner.png",
+      DARK: "/images/projects/step-by-step/step-by-step-home-banner.png",
     },
   },
   {
     index: 1,
-    title: "Aeon Marketing",
+    title: "Istikhara Qalandar",
     href: "/projects",
-    tags: [
-      "ReactJs",
-      "NodeJs",
-      "NextJs",
-      "CSS",
-      "Vercel",
-    ],
+    tags: ["Next Js", "Node Js", "SCSS", "Vercel"],
     image: {
-      LIGHT: "/images/projects/aeon-marketing/aeon-marketing-banner.webp",
-      DARK: "/images/projects/aeon-marketing/aeon-marketing-banner.webp",
+      LIGHT: "/images/projects/istikhara-qalandar/istikhara-qalandar.png",
+      DARK: "/images/projects/istikhara-qalandar/istikhara-qalandar.png",
     },
   },
   {
     index: 2,
-    title: "Wahab Sharif",
+    title: "Castle Marketing",
     href: "/projects",
-    tags: ["NextJs", "ThreeJs","NodeJs", "CSS", "Vercel"],
+    tags: ["NextJs", "CSS", "NodeJs", "Vercel"],
     image: {
-      LIGHT: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.webp",
-      DARK: "/images/projects/wahab-sharif-galaxy/wahab-sharif-v2-banner.webp",
+      LIGHT: "/images/projects/castle-marketing/castle-marketing-banner.webp",
+      DARK: "/images/projects/castle-marketing/castle-marketing-banner.webp",
     },
   },
 ];
