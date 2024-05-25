@@ -37,6 +37,34 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListProps[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
+    name: "Step By Step",
+    favicon: "/images/projects/logos/step-by-step-icon-white.ico",
+    imageUrl: [
+      "/images/projects/step-by-step/step-by-step-home-banner.png",
+      "/images/projects/step-by-step/step-by-step-web-image-1.png",
+      "/images/projects/step-by-step/step-by-step-image-2.png",
+      "/images/projects/step-by-step/step-by-step-image-3.png",
+    ],
+    description:
+      "Step By Step is a comprehensive full-stack web application designed for users to book their desired services. With an intuitive interface and seamless functionality, it provides a convenient and efficient platform for scheduling a variety of services to meet users' needs.",
+    sourceCodeHref: "https://github.com/wahabsharif/step-by-step-v2",
+    liveWebsiteHref: "https://step-by-step-v2.vercel.app/",
+  },
+  {
+    name: "Istikhara Qalandar",
+    favicon: "/images/projects/logos/istikhara-qalandar-icon.ico",
+    imageUrl: [
+      "/images/projects/istikhara-qalandar/istikhara-qalandar.png",
+      "/images/projects/istikhara-qalandar/istikhara-qalandar-web-image-1.png",
+      "/images/projects/istikhara-qalandar/istikhara-qalandar-web-image-2.png",
+      "/images/projects/istikhara-qalandar/istikhara-qalandar-web-image-3.png",
+    ],
+    description:
+      "Istikhara Qalandar is a website offering users access to their horoscope, numerology insights, and detailed information about Istikhara and Wazaif. It serves as a comprehensive platform for those seeking spiritual guidance and knowledge in these areas.",
+    sourceCodeHref: "https://github.com/wahabsharif/istikhara-qalandar",
+    liveWebsiteHref: "https://istikhara-qalandar.vercel.app/",
+  },
+  {
     name: "My Previous Portfolio",
     favicon: "/images/projects/logos/wahab-sharif-v2.ico",
     imageUrl: [
@@ -91,30 +119,4 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     sourceCodeHref: "https://github.com/wahabsharif/Aeon-Marketing-Next-js-1.0",
     liveWebsiteHref: "https://www.aeonmarketing.com.pk/",
   },
-  // {
-  //   name: "Covid Tracker",
-  //   favicon: "/images/projects/logos/covidtracker.ico",
-  //   imageUrl: [
-  //     "/images/projects/covidTracker.webp",
-  //     "/images/projects/covidTrackerMap.webp",
-  //     "/images/projects/covidTrackerTable.webp",
-  //   ],
-  //   description:
-  //     "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
-  //   sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
-  //   liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
-  // },
-  // {
-  //   name: "Stock predictor",
-  //   favicon: "/images/projects/logos/stockpredictor.ico",
-  //   imageUrl: [
-  //     "/images/projects/stockPredictor.webp",
-  //     "/images/projects/stockPredictorCandleChart.webp",
-  //     "/images/projects/stockPredictorCompareChart.webp",
-  //     "/images/projects/stockPredictorLineChart.webp",
-  //   ],
-  //   description:
-  //     "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
-  //   sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
-  // },
 ];
