@@ -1,8 +1,8 @@
 import Image from "next/image";
 import {
   SiExpress,
-  // SiSocketdotio,
-  // SiPrisma,
+  SiSocketdotio,
+  SiPrisma,
   SiNextdotjs,
   // SiFlask,
 } from "react-icons/si";
@@ -10,7 +10,7 @@ import {
   FramerMotionIcon,
   GithubIcon,
   ReactRouterDomIcon,
-  // VitePwaIcon,
+  VitePwaIcon,
 } from "@/components/Icons";
 import { SkillPillProps } from "@/components/Skills";
 
@@ -94,18 +94,18 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
       </span>
     ),
   },
-  // {
-  //   name: "React-router-dom",
-  //   icon: <ReactRouterDomIcon className="w-5 h-5 sm:h-8 sm:w-8" />,
-  // },
-  // {
-  //   name: "Redux",
-  //   icon: (
-  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
-  //       <Image alt="redux logo" src="/icons/redux.svg" fill />
-  //     </span>
-  //   ),
-  // },
+  {
+    name: "React-router-dom",
+    icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  },
+  {
+    name: "Redux",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="redux logo" src="/icons/redux.svg" fill />
+      </span>
+    ),
+  },
   {
     name: "Tailwind CSS",
     icon: (
@@ -134,10 +134,10 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
       </span>
     ),
   },
-  // {
-  //   name: "Vite pwa",
-  //   icon: <VitePwaIcon className="w-5 h-5 sm:h-8 sm:w-8" />,
-  // },
+  {
+    name: "Vite pwa",
+    icon: <VitePwaIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
+  },
 ];
 
 export const BACKEND_PILL: SkillPillProps[] = [
@@ -153,10 +153,10 @@ export const BACKEND_PILL: SkillPillProps[] = [
     name: "Express.js",
     icon: <SiExpress className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
-  // {
-  //   name: "Socket.io",
-  //   icon: <SiSocketdotio className="w-5 h-5 sm:h-8 sm:w-8" />,
-  // },
+  {
+    name: "Socket.io",
+    icon: <SiSocketdotio className="h-5 w-5 sm:h-8 sm:w-8" />,
+  },
   // {
   //   name: "Flask",
   //   icon: <SiFlask className="w-5 h-5 sm:h-8 sm:w-8" />,
@@ -172,20 +172,28 @@ export const DATABASE_ORM_PILL: SkillPillProps[] = [
       </span>
     ),
   },
-  // {
-  //   name: "PostgreSQL",
-  //   icon: (
-  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
-  //       <Image alt="postgresql logo" src="/icons/postgresql.svg" fill />
-  //     </span>
-  //   ),
-  // },
-  // {
-  //   name: "Prisma",
-  //   icon: (
-  //     <SiPrisma className="h-5 w-5 fill-[#2d3748] dark:fill-zinc-100 sm:h-8 sm:w-8" />
-  //   ),
-  // },
+  {
+    name: "GraphQl",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="graphql logo" src="/icons/graphql.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "PostgreSQL",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="postgresql logo" src="/icons/postgresql.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Prisma",
+    icon: (
+      <SiPrisma className="h-5 w-5 fill-[#2d3748] dark:fill-zinc-100 sm:h-8 sm:w-8" />
+    ),
+  },
 ];
 
 export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
@@ -201,14 +209,14 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
     name: "Github",
     icon: <GithubIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
-  // {
-  //   name: "Docker",
-  //   icon: (
-  //     <span className="relative w-5 h-5 sm:h-8 sm:w-8">
-  //       <Image alt="docker logo" src="/icons/docker.svg" fill />
-  //     </span>
-  //   ),
-  // },
+  {
+    name: "Docker",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="docker logo" src="/icons/docker.svg" fill />
+      </span>
+    ),
+  },
   {
     name: "Postman",
     icon: (
@@ -227,6 +235,72 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
   },
 ];
 
+export const HEADLESS_CMS: SkillPillProps[] = [
+  {
+    name: "Strapi",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="strapi logo" src="/icons/strapi.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Contentful",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="Contentful Logo" src="/icons/contentful.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Sanity",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="sanity logo" src="/icons/sanity.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Dato",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="dato logo" src="/icons/dato.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Prismic",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="prismic logo" src="/icons/prismic.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Wordpress",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="wordpres logo" src="/icons/wordpress.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Magento",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="magento logo" src="/icons/magento.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Netlify",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="netlify logo" src="/icons/netlify.svg" fill />
+      </span>
+    ),
+  },
+];
 export const OTHER_TROLLINGS: SkillPillProps[] = [
   {
     name: "Linux",
