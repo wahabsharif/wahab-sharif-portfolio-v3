@@ -6,6 +6,7 @@ type PageSEOProps = {
   title: string;
   description: string;
   ogType: string;
+  keywords: string;
   ogImage:
     | string
     | {
@@ -14,7 +15,13 @@ type PageSEOProps = {
       }[];
 };
 
-export function PageSEO({ title, description, ogType, ogImage }: PageSEOProps) {
+export function PageSEO({
+  title,
+  description,
+  keywords,
+  ogType,
+  ogImage,
+}: PageSEOProps) {
   const router = useRouter();
 
   const siteUrl = siteMetadata.siteUrl + router.asPath;
@@ -23,12 +30,14 @@ export function PageSEO({ title, description, ogType, ogImage }: PageSEOProps) {
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
 
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      <meta property="og:keywords" content={keywords} />
       {Array.isArray(ogImage) ? (
         ogImage.map(({ url }) => (
           <meta property="og:image" content={url} key={url} />

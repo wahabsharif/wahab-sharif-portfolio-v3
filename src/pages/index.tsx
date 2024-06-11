@@ -6,7 +6,9 @@ import Hero from "@/components/Hero";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
-const TimeTracker = dynamic(() => import("@/components/TimeTracker"), { ssr: true });
+const TimeTracker = dynamic(() => import("@/components/TimeTracker"), {
+  ssr: true,
+});
 const Skills = dynamic(() => import("@/components/Skills"), { ssr: true });
 const Project = dynamic(() => import("@/components/ProjectShowcase"), {
   ssr: true,
@@ -25,7 +27,7 @@ export default function Home() {
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Wahab Sharif - Full Stack Developer Portfolio",
+          title: "Wahab Sharif - Full Stack Developer",
           description:
             "Dive into the world of web development with Wahab Sharif. Discover a React and Frontend Developer with 4 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
           images: [
@@ -44,7 +46,7 @@ export default function Home() {
           {
             property: "keywords",
             content:
-              "React Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design",
+              "React Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design,Full Stack Developer, web development, front-end, back-end, programming languages, user-friendly websites, applications, databases, integration, web solutions, next js, node js, react js, scss, css, tailwind, bootstrap, javascript, typescript, react, react native, vue js, vue.",
           },
         ]}
       />

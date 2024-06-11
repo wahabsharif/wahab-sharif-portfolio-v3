@@ -1,8 +1,11 @@
 export const siteMetadata = {
-  title: "Wahab Sharif Portfolio",
+  title: "Wahab Sharif | Full Stack developer",
   author: "Wahab Sharif",
   headerTitle: "Wahab Sharif",
-  description: "Full Stack developer",
+  description:
+    "A Full Stack Developer is a versatile professional skilled in both front-end and back-end web development. They design and implement user-friendly websites and applications by working on the client side, server side, and databases. Proficient in multiple programming languages and frameworks, Full Stack Developers ensure seamless integration, robust functionality, and optimal performance of web solutions. They bridge the gap between user experience and technical functionality, making them essential for comprehensive digital projects.",
+  keywords:
+    "Full Stack Developer, web development, front-end, back-end, programming languages, user-friendly websites, applications, databases, integration, web solutions, next js, node js, react js, scss, css, tailwind, bootstrap, javascript, typescript, react, react native, vue js, vue.",
   language: "en-us",
   theme: "dark",
   siteName: "wahabsharif.me",
