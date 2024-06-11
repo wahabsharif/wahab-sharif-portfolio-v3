@@ -41,8 +41,8 @@ export default function Home() {
       <Project projects={PROJECT_SHOWCASE} />
 
       {/* Render ArticleCards */}
-      <div className="container mx-auto p-4">
-        <h2 className="mb-4 text-2xl font-bold">Articles</h2>
+      <div className="py-25 overflow-hidden px-6 sm:px-14 md:px-20">
+        <h2 className="mb-10 text-xl font-semibold sm:text-3xl">Articles</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
             <ArticleCard

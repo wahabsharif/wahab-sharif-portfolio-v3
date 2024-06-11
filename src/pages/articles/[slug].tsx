@@ -35,24 +35,29 @@ export default function ArticlePage({ article }: ArticlePageProps) {
             />
           </div>
         )}
-        <div className="mt-5">
+        <div className="mt-5 text-left">
+          {" "}
+          {/* Added text-left class here */}
           <p className="text-2xl font-bold">{article.description}</p>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 text-left">
+          {" "}
+          {/* Added text-left class here */}
           {article.content.map((paragraph, index) => (
             <p className="mt-4 text-xs md:text-sm" key={index}>
               {index + 1}. {paragraph}
             </p>
           ))}
         </div>
-        <div className="mt-4">
+        <div className="mt-4 text-left">
+          {" "}
+          {/* Added text-left class here */}
           {article.body.map((paragraph, index) => (
             <p className="mt-5 text-lg md:text-lg" key={index}>
               {paragraph}
             </p>
           ))}
         </div>
-        {/* Button to navigate to /articles page */}
         <div className="mt-8 text-center">
           <button className="inline-flex items-center gap-2 rounded-md bg-zinc-100 px-3 py-2 text-teal-600 transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-white">
             <span className="block h-6 w-6 sm:h-7 sm:w-7 lg:h-9 lg:w-9">
