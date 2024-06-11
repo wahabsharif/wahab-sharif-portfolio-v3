@@ -15,6 +15,8 @@ span {
 }
 
 /* Example: Apply Orbitron font to headings */
+
+/* Apply custom bullets to headings */
 h1,
 h2,
 h3,
@@ -22,4 +24,14 @@ h4,
 h5,
 h6 {
     font-family: var(--orbitron-font), sans-serif;
+
+}
+
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: "🍃";
+    margin-right: 16px;
 }
