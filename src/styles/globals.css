@@ -10,7 +10,6 @@ body {
 }
 
 /* Apply Zen Dots font to p and span tags */
-p,
 span {
     font-family: var(--zen-dots-font), sans-serif;
 }
