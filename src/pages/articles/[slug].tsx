@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { NextSeo } from "next-seo";
 import CursorTrailCanvas from "@/components/CursorTrailCanvas";
-import { motion } from "framer-motion";
 
 interface ArticlePageProps {
   article: Article;
@@ -22,10 +21,10 @@ export default function ArticlePage({ article }: ArticlePageProps) {
         description={article.description}
         canonical={`https://wahabsharif.me/articles/${article.slug}`}
       />
-      <div className="container mx-auto flex flex-col items-center p-4">
-        <h1 className="mb-4 text-2xl font-bold">{article.title}</h1>
+      <div className="container mx-auto flex flex-col items-center p-20">
+        <h1 className="mb-4 text-4xl font-bold">{article.title}</h1>
         {article.thumbnail && (
-          <div className="relative">
+          <div className="relative mt-5">
             {/* Correctly use the next/image component */}
             <Image
               src={article.thumbnail}
@@ -36,20 +35,25 @@ export default function ArticlePage({ article }: ArticlePageProps) {
             />
           </div>
         )}
-        <div className="mt-3">
-          <p className="text-xs md:text-sm">{article.description}</p>
+        <div className="mt-5">
+          <p className="text-2xl font-bold">{article.description}</p>
         </div>
         <div className="mt-6">
           {/* Map through the content array and render each paragraph with numbering */}
           {article.content.map((paragraph, index) => (
-            <p className="mt-5 text-xs md:text-sm" key={index}>
+            <p className="mt-4 text-xs md:text-sm" key={index}>
               {index + 1}. {paragraph}
             </p>
           ))}
         </div>
-        <div className="mt-3">
-          <p className="text-xs md:text-sm">{article.body}</p>
-        </div>
+        <div className="mt-4">
+          {/* Map through the content array and render each paragraph with numbering */}
+          {article.body.map((paragraph, index) => (
+            <p className="mt-5 text-lg md:text-lg" key={index}>
+              {paragraph}
+            </p>
+          ))}
+        </div>{" "}
       </div>
     </>
   );
