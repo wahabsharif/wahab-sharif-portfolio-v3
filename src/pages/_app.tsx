@@ -1,3 +1,5 @@
+// pages/_app.tsx
+
 import MainLayout from "@/layout/MainLayout";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -6,14 +8,30 @@ import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { Orbitron, Zen_Dots } from "next/font/google";
 
-// Import the types for Next.js
-/// <reference types="@vercel/next/global" />
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--orbitron-font",
+  weight: ["400", "500", "700"],
+});
+
+const zenDots = Zen_Dots({
+  subsets: ["latin"],
+  variable: "--zen-dots-font",
+  weight: "400",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <>
+      <style jsx global>{`
+        :root {
+          --orbitron-font: ${orbitron.style.fontFamily};
+          --zen-dots-font: ${zenDots.style.fontFamily};
+        }
+      `}</style>
       <ThemeProvider attribute="class" defaultTheme="dark">
         <MainLayout>
           <AnimatePresence mode="wait" initial={false}>

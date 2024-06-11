@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* styles/globals.css */
+
+body {
+    font-family: var(--orbitron-font), sans-serif;
+}
+
+/* Apply Zen Dots font to p and span tags */
+p,
+span {
+    font-family: var(--zen-dots-font), sans-serif;
+}
+
+/* Example: Apply Orbitron font to headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--orbitron-font), sans-serif;
+}
