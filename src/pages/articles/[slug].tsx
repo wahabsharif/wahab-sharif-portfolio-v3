@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { NextSeo } from "next-seo";
 import CursorTrailCanvas from "@/components/CursorTrailCanvas";
+import { ArticleIcon } from "@/components/Icons";
+import Link from "next/link";
 
 interface ArticlePageProps {
   article: Article;
@@ -25,13 +27,11 @@ export default function ArticlePage({ article }: ArticlePageProps) {
         <h1 className="mb-4 text-4xl font-bold">{article.title}</h1>
         {article.thumbnail && (
           <div className="relative mt-5">
-            {/* Correctly use the next/image component */}
             <Image
               src={article.thumbnail}
               alt="article thumbnail"
               width={800}
-              height={0} // Set the height based on the aspect ratio of your image
-              // layout="responsive" // Use responsive layout for the image
+              height={0}
             />
           </div>
         )}
@@ -39,7 +39,6 @@ export default function ArticlePage({ article }: ArticlePageProps) {
           <p className="text-2xl font-bold">{article.description}</p>
         </div>
         <div className="mt-6">
-          {/* Map through the content array and render each paragraph with numbering */}
           {article.content.map((paragraph, index) => (
             <p className="mt-4 text-xs md:text-sm" key={index}>
               {index + 1}. {paragraph}
@@ -47,20 +46,30 @@ export default function ArticlePage({ article }: ArticlePageProps) {
           ))}
         </div>
         <div className="mt-4">
-          {/* Map through the content array and render each paragraph with numbering */}
           {article.body.map((paragraph, index) => (
             <p className="mt-5 text-lg md:text-lg" key={index}>
               {paragraph}
             </p>
           ))}
-        </div>{" "}
+        </div>
+        {/* Button to navigate to /articles page */}
+        <div className="mt-8 text-center">
+          <button className="inline-flex items-center gap-2 rounded-md bg-zinc-100 px-3 py-2 text-teal-600 transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-white">
+            <span className="block h-6 w-6 sm:h-7 sm:w-7 lg:h-9 lg:w-9">
+              <ArticleIcon />
+            </span>
+            <span className="text-base font-semibold sm:text-lg lg:text-xl">
+              <Link href="/articles">View All Articles</Link>
+            </span>
+          </button>
+        </div>
       </div>
     </>
   );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const articles = getAllArticles(); // Use getAllArticles function
+  const articles = getAllArticles();
   const paths = articles.map((article) => ({ params: { slug: article.slug } }));
   return {
     paths,
