@@ -1,10 +1,9 @@
+import { ArticleIcon } from "@/components/Icons";
 import { Article, getAllArticles, getArticleBySlug } from "@/data/articles";
 import { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
-import React from "react";
 import { NextSeo } from "next-seo";
-import CursorTrailCanvas from "@/components/CursorTrailCanvas";
-import { ArticleIcon } from "@/components/Icons";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
+import Image from "next/image";
 import Link from "next/link";
 
 interface ArticlePageProps {
@@ -14,14 +13,33 @@ interface ArticlePageProps {
 export default function ArticlePage({ article }: ArticlePageProps) {
   return (
     <>
-      <CursorTrailCanvas
-        color="hsla(183, 64%, 27%, 0.4)"
-        className="fixed inset-0 w-full h-full pointer-events-none -z-10"
-      />
       <NextSeo
-        title={`${article.title} - By Wahab Sharif`}
+        title={`${article.title} - By Wahab Sharif  - Full Stack Developer`}
         description={article.description}
-        canonical={`https://wahabsharif.me/articles/${article.slug}`}
+        canonical={`${siteMetadata.siteUrl}/articles/${article.slug}`}
+        openGraph={{
+          url: `${siteMetadata.siteUrl}/articles/${article.slug}`,
+          title: `${article.title} - By Wahab Sharif  - Full Stack Developer`,
+          description: `${article.description}`,
+          images: [
+            {
+              url: `${siteMetadata.siteUrl}/${siteMetadata.twitterImage}`,
+              alt: "Wahab Sharif - Portfolio Image",
+            },
+          ],
+          siteName: siteMetadata.siteName,
+          type: "website",
+        }}
+        twitter={{
+          cardType: "summary_large_image",
+        }}
+        additionalMetaTags={[
+          {
+            property: "keywords",
+            content:
+              "About Me, React Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Professional Journey, Skills, Passion for Web Development, Programming, Software Engineer, Coding, Developer, Web Design, UI/UX, TypeScript, Node.js, Next.js, Tailwind CSS, Git, GitHub, Version Control, Agile Development, Scrum, Responsive Design, Mobile Development, API Integration, RESTful Services, JSON, AJAX, ES6, Babel, Webpack, npm, Yarn, Frontend Frameworks, React Hooks, Redux, Context API, GraphQL, Apollo, Material-UI, Bootstrap, Sass, LESS, Styled Components, Jest, Enzyme, Cypress, Testing Library, Continuous Integration, Continuous Deployment, CI/CD, DevOps, AWS, Docker, Kubernetes, Microservices, Serverless, Lambda, Firebase, MongoDB, SQL, PostgreSQL, MySQL, SQLite, Authentication, Authorization, OAuth, JWT, Security, Encryption, Performance Optimization, SEO, Web Accessibility, WCAG, Lighthouse, Analytics, Google Analytics, Tag Manager, Digital Marketing, Content Management Systems, WordPress, Headless CMS, Jamstack, Gatsby, Eleventy, Netlify, Vercel, D3.js, Chart.js, Data Visualization, WebGL, Three.js, Game Development, PWA, Progressive Web Apps, Service Workers, Offline Support, Caching, Web Sockets, Real-time Communication, GraphQL Subscriptions, WebRTC, Video Streaming, Live Streaming, Blogging, Technical Writing",
+          },
+        ]}
       />
       <div className="container flex flex-col items-center p-20 mx-auto">
         <h1 className="mb-4 text-4xl font-bold">{article.title}</h1>
