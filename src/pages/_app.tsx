@@ -9,6 +9,7 @@ import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { Orbitron, Zen_Dots } from "next/font/google";
+import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -35,6 +36,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" defaultTheme="dark">
         <MainLayout>
           <AnimatePresence mode="wait" initial={false}>
+            <CursorTrailCanvas
+              color="hsla(183, 64%, 27%, 0.4)"
+              className="fixed inset-0 z-50 w-full h-full pointer-events-none"
+            />
             <Component key={router.asPath} {...pageProps} />
           </AnimatePresence>
         </MainLayout>
