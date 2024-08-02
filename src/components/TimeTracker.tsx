@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import FadeRight from "@/animation/FadeRight";
+import dynamic from "next/dynamic";
+
+const FadeRight = dynamic(() => import("@/animation/FadeRight"), { ssr: true });
 
 export default function TimeTracker(): JSX.Element {
   const [totalTime, setTotalTime] = useState({
@@ -32,7 +34,7 @@ export default function TimeTracker(): JSX.Element {
   }, []);
 
   return (
-    <section className="overflow-hidden px-6 py-32 sm:px-14 md:px-20">
+    <section className="px-6 py-32 overflow-hidden sm:px-14 md:px-20">
       <div className="text-center">
         <h4 className="mb-6 text-3xl font-semibold sm:text-4xl md:text-5xl xl:text-6xl">
           Duration Engaged in Coding
@@ -45,22 +47,22 @@ export default function TimeTracker(): JSX.Element {
             className="-z-20"
           >
             <div className="flex flex-wrap justify-center gap-4 text-xl font-bold text-teal-600 dark:text-teal-300">
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.years} years
               </span>
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.months} months
               </span>
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.days} days
               </span>
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.hours} hours
               </span>
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.minutes} minutes
               </span>
-              <span className="flex w-max items-center gap-2 overflow-hidden rounded-lg border border-tera-500/20 bg-white px-4 py-3 text-sm shadow-sm dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
+              <span className="flex items-center gap-2 px-4 py-3 overflow-hidden text-sm bg-white border rounded-lg shadow-sm w-max border-tera-500/20 dark:bg-zinc-800 sm:text-base md:px-6 md:py-3 md:text-lg">
                 {totalTime.seconds} seconds
               </span>
             </div>

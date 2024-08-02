@@ -1,8 +1,10 @@
-import ArticleCard from "@/components/ArticleCard";
 import { Article, getAllArticles } from "@/data/articles";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import dynamic from "next/dynamic";
+
+const ArticleCard = dynamic(() => import("@/components/ArticleCard"));
 
 export default function ArticlesPage({ articles }: { articles: Article[] }) {
   return (

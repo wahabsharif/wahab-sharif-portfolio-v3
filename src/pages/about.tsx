@@ -1,13 +1,18 @@
-import FadeRight from "@/animation/FadeRight";
-import FadeUp from "@/animation/FadeUp";
-import ShowCaseList from "@/components/ShowCaseList";
 import { EXPERIENCE } from "@/data/experience";
 import { AnimatePresence } from "framer-motion";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-// import { EDUCATION } from "@/data/education";
+import dynamic from "next/dynamic";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 import heroProfileImg from "@/public/images/wahab-pic-neon-1.png";
+
+const FadeRight = dynamic(() => import("@/animation/FadeRight"), {
+  ssr: true,
+});
+const FadeUp = dynamic(() => import("@/animation/FadeUp"), { ssr: true });
+const ShowCaseList = dynamic(() => import("@/components/ShowCaseList"), {
+  ssr: true,
+});
 
 export default function About() {
   return (

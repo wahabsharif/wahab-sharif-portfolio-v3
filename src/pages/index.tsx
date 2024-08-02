@@ -1,6 +1,3 @@
-// pages/index.tsx
-import ArticleCard from "@/components/ArticleCard"; // Import ArticleCard component
-import Hero from "@/components/Hero";
 import articles from "@/data/articles"; // Import article data
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
@@ -9,6 +6,10 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 
 const TimeTracker = dynamic(() => import("@/components/TimeTracker"), {
+  ssr: true,
+});
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: true });
+const ArticleCard = dynamic(() => import("@/components/ArticleCard"), {
   ssr: true,
 });
 const Skills = dynamic(() => import("@/components/Skills"), { ssr: true });
