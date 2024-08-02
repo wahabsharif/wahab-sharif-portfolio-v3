@@ -2,13 +2,21 @@ import { routes } from "@/data/navigationRoutes";
 import Navbar from "@/layout/Navbar/Navbar";
 import { classNames } from "@/utility/classNames";
 import dynamic from "next/dynamic";
-import { Montserrat } from "next/font/google";
+import { Orbitron, Zen_Dots } from "next/font/google";
 import { ReactNode } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const montserrat = Montserrat({
+const orbitron = Orbitron({
   subsets: ["latin"],
+  display: "swap",
 });
+
+// const zenDots = Zen_Dots({
+//   subsets: ["latin"],
+//   variable: "--zen-dots-font",
+//   weight: "400",
+//   display: "swap",
+// });
 
 const Footer = dynamic(() => import("@/layout/Footer"), { ssr: true });
 
@@ -19,13 +27,12 @@ type MainLayoutProps = {
 export default function MainLayout(props: MainLayoutProps) {
   return (
     <>
-      <div className={classNames("min-h-screen", montserrat.className)}>
+      <main className={classNames("min-h-screen", orbitron.className)}>
         <Navbar routes={routes} />
-        <main>{props.children}
-          <SpeedInsights />
-        </main>
-      </div>
-      <Footer />
+        {props.children}
+        <SpeedInsights />
+        <Footer />
+      </main>
     </>
   );
 }
