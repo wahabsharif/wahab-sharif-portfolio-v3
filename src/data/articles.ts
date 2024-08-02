@@ -9,6 +9,83 @@ export type Article = {
 
 const articles: Article[] = [
   {
+    title: "20 Best Websites for Web Design Inspiration and Ideas",
+    slug: "20-best-websites-for-web-design-inspiration-and-ideas",
+    thumbnail:
+      "/images/articles/20-best-websites-for-web-design-inspiration-and-ideas.avif",
+    description:
+      "Welcome to the best websites where to find examples and ideas for web design inspiration. Use them to identify layout styles and color schemes that you like. Quickly get over creator's block and start filling that blank page.",
+    content: [
+      "Websitevice",
+      "One Page Love",
+      "Landingfolio",
+      "Lapa Ninja",
+      "Godly",
+      "Siteinspire",
+      "Maxibestof",
+      "InspoVault",
+      "Landing Gallery",
+      "SEE + SAW",
+      "Design Vault",
+      "Httpster",
+      "Site of Sites",
+      "Landings",
+      "Web Design Inspiration",
+      "Curated",
+      "Admire The Web",
+      "Designspiration",
+      "Best Website Gallery",
+      "Lookup",
+    ],
+    body: [
+      "Most resources are free but there are also a couple of paid ones. Some of them are general while others focus on landing pages, ecommerce and portfolios. There are even a few ultra niched ones for footers, navigation and interaction examples.",
+    ],
+  },
+  {
+    title: "Background Removal in the Browser & Node.js",
+    slug: "background-removal-in-the-browser-and-nodejs",
+    thumbnail:
+      "/images/articles/background-removal-in-the-browser-and-nodejs.jpg",
+    description:
+      "Remove backgrounds from images directly in the browser or Node.js environment with ease and no additional costs or privacy concerns.",
+    content: [
+      "@imgly/background-removal is a powerful npm package that allows developers to seamlessly remove the background from images directly in the browser.",
+      "@imgly/background-removal-node is a powerful npm package that allows developers to remove the background from images in Node.js.",
+      "With its unique features and capabilities, this package offers an innovative and cost-effective solution for background removal tasks without compromising data privacy.",
+    ],
+    body: [
+      "@imgly/background-removal is ideal for developers and projects that require efficient and cost-effective background removal directly in the browser or Node.js. It caters to a wide range of use cases, including but not limited to:",
+
+      "E-commerce applications that need to remove backgrounds from product images in real time.",
+
+      "Image editing applications that require background removal capabilities for enhancing user experience.",
+
+      "Web-based graphic design tools that aim to simplify the creative process with in-browser background removal.",
+
+      "Whether you are a professional developer or a hobbyist, @imgly/background-removal empowers you to deliver impressive applications and services with ease.",
+    ],
+  },
+  {
+    title: "Top 10 Clean Code Rules",
+    slug: "top-10-clean-code-rules",
+    thumbnail: "/images/articles/top-10-clean-code-rules.webp",
+    description:
+      "According to “Clean code” book by Uncle Bob, he defined some guidances and rules that developers should follow. This is more imperative for the less experienced developers. With more experience, comes the possibility of breaking some rules or reinventing them with justifications.",
+    content: [
+      "No code comments.",
+      "Dead comments or code should be deleted.",
+      "Incorrect behaviour at boundaries.",
+      "Positive conditionals.",
+      "Standard architecture, coding, and design guidelines should be followed.",
+      "Good and Consistent naming.",
+      "KISS principle should be applied.",
+      "Use of exceptions instead of return codes.",
+      "Boy scout rule- Leave the campground cleaner than you found it.",
+      "Use of exceptions instead of return codes.",
+    ],
+    body: [""],
+  },
+  {
     title: "Essential VS Code Extensions for Front-End Development in 2024",
     slug: "essential-vs-code-extensions-for-front-end-development-in-2024",
     thumbnail: "/images/articles/vs-code-ext.webp",

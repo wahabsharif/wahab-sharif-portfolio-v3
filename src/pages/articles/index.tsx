@@ -1,16 +1,11 @@
-import { Article, getAllArticles } from "@/data/articles";
 import ArticleCard from "@/components/ArticleCard";
-import { NextSeo } from "next-seo";
-import CursorTrailCanvas from "@/components/CursorTrailCanvas";
+import { Article, getAllArticles } from "@/data/articles";
 import { motion } from "framer-motion";
+import { NextSeo } from "next-seo";
 
 export default function ArticlesPage({ articles }: { articles: Article[] }) {
   return (
     <>
-      <CursorTrailCanvas
-        color="hsla(183, 64%, 27%, 0.4)"
-        className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
-      />
       <NextSeo
         title="Articles by Wahab Sharif"
         description="Explore our collection of articles covering various topics."

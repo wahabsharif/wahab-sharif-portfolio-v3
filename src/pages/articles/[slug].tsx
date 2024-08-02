@@ -16,14 +16,14 @@ export default function ArticlePage({ article }: ArticlePageProps) {
     <>
       <CursorTrailCanvas
         color="hsla(183, 64%, 27%, 0.4)"
-        className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
+        className="fixed inset-0 w-full h-full pointer-events-none -z-10"
       />
       <NextSeo
-        title={article.title}
+        title={`${article.title} - By Wahab Sharif`}
         description={article.description}
         canonical={`https://wahabsharif.me/articles/${article.slug}`}
       />
-      <div className="container mx-auto flex flex-col items-center p-20">
+      <div className="container flex flex-col items-center p-20 mx-auto">
         <h1 className="mb-4 text-4xl font-bold">{article.title}</h1>
         {article.thumbnail && (
           <div className="relative mt-5">
@@ -60,7 +60,7 @@ export default function ArticlePage({ article }: ArticlePageProps) {
         </div>
         <div className="mt-8 text-center">
           <button className="inline-flex items-center gap-2 rounded-md bg-zinc-100 px-3 py-2 text-teal-600 transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-white">
-            <span className="block h-6 w-6 sm:h-7 sm:w-7 lg:h-9 lg:w-9">
+            <span className="block w-6 h-6 sm:h-7 sm:w-7 lg:h-9 lg:w-9">
               <ArticleIcon />
             </span>
             <span className="text-base font-semibold sm:text-lg lg:text-xl">
