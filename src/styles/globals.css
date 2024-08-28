@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* styles/globals.css */
 
 body {
-    font-family: var(--orbitron-font), sans-serif;
+  font-family: var(--orbitron-font), sans-serif;
 }
 
 /* Apply Zen Dots font to p and span tags */
 span {
-    font-family: var(--zen-dots-font), sans-serif;
+  font-family: var(--zen-dots-font), sans-serif;
 }
 
 /* Example: Apply Orbitron font to headings */
@@ -23,15 +22,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--orbitron-font), sans-serif;
-
+  font-family: var(--orbitron-font), sans-serif;
 }
 
 h2::before,
-h3::before,
 h4::before,
 h5::before,
 h6::before {
-    content: "🍃";
-    margin-right: 16px;
+  content: "🍃";
+  margin-right: 16px;
 }

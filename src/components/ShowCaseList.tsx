@@ -41,18 +41,19 @@ function ShowCaseLiIcon(props: TShowCaseLiIcon) {
   );
 }
 
-export type TShowCaseListDetatils = {
+export type TShowCaseListDetails = {
   title: string;
-  organisation: {
+  organization: {
     name: string;
     href: string;
   };
   date: string;
   location: string;
   description: string;
+  review: string;
 };
 
-export function ShowCaseListDetatils(props: TShowCaseListDetatils) {
+export function ShowCaseListDetails(props: TShowCaseListDetails) {
   const ref = useRef(null);
   return (
     <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
@@ -65,20 +66,23 @@ export function ShowCaseListDetatils(props: TShowCaseListDetatils) {
           duration: 0.4,
         }}
       >
-        <h3 className="text-base font-bold sm:text-xl md:text-2xl">
+        <h3 className="my-5 text-base font-bold sm:text-xl md:text-2xl">
           {props.title}{" "}
           <Link
-            href={props.organisation.href}
+            href={props.organization.href}
             className="cursor-pointer text-teal-600 dark:text-teal-400"
             target="_blank"
           >
-            @{props.organisation.name}
+            @{props.organization.name}
           </Link>
         </h3>
-        <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400 xs:text-base">
+        <span className="my-3 text-sm font-medium text-zinc-600 dark:text-zinc-400 xs:text-base">
           {props.date} | {props.location}
         </span>
-        <p className="text-sm font-medium xs:text-base">{props.description}</p>
+        <p className="my-3 text-sm font-medium xs:text-base">{props.review}</p>
+        <p className="my-3 text-sm font-medium xs:text-base">
+          "{props.description}""
+        </p>
       </motion.div>
     </li>
   );
@@ -86,7 +90,7 @@ export function ShowCaseListDetatils(props: TShowCaseListDetatils) {
 
 export type TShowCaseList = {
   title: string;
-  details: TShowCaseListDetatils[];
+  details: TShowCaseListDetails[];
 };
 
 export default function ShowCaseList(props: TShowCaseList) {
@@ -107,7 +111,7 @@ export default function ShowCaseList(props: TShowCaseList) {
         ></motion.div>
         <ul className="ml-4 w-full items-center">
           {props.details.map((_details, index) => (
-            <ShowCaseListDetatils key={index} {..._details} />
+            <ShowCaseListDetails key={index} {..._details} />
           ))}
         </ul>
       </div>

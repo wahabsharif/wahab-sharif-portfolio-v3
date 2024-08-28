@@ -1,36 +1,27 @@
-import { TShowCaseListDetatils } from "@/components/ShowCaseList";
+import { TShowCaseListDetails } from "@/components/ShowCaseList";
 
-export const EXPERIENCE: TShowCaseListDetatils[] = [
-  {
-    title: "Full Stack Developer",
-    organisation: {
-      name: "Beacon Techh",
-      href: "https://beacontechh.com/",
-    },
-    date: "July 2023 - Present",
-    location: "Islamabad",
-    description: "Desktop/Mobile App development.",
-  },
+export const EXPERIENCE: TShowCaseListDetails[] = [
   {
     title: "Front End Developer",
-    organisation: {
+    organization: {
       name: "Beacon Techh",
       href: "https://beacontechh.com/",
     },
-    date: "June 2020 - July 2023",
+    date: "july 2020 - Aug 2024",
     location: "Islamabad",
+    review: "What Beacon Techh Saying!",
     description:
-      "Contributed to team updating codebases and learning web dev.",
+      "We are confident that Wahab will bring the same level of commitment and expertise to any organization he joins. We highly recommend him for any position that requires a skilled and dedicated Full Stack Developer.",
   },
   {
     title: "Web Developer",
-    organisation: {
+    organization: {
       name: "Fiver / UpWork",
       href: "",
     },
-    date: "Winter - 2022",
+    date: "2018 - 2020",
     location: "Remote",
-    description:
-      "I Created the stunning Ux/Ui module.",
+    review: "",
+    description: "I Created the stunning Ux/Ui module.",
   },
 ];
