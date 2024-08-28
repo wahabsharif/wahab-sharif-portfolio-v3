@@ -1,6 +1,6 @@
-import { TShowCaseListDetatils } from "@/components/ShowCaseList";
+import { TShowCaseListDetails } from "@/components/ShowCaseList";
 
-export const EDUCATION: TShowCaseListDetatils[] = [
+export const EDUCATION: TShowCaseListDetails[] = [
   {
     title: "Bachelor Of Engineering in Electronics and Telecommunication",
     organisation: {
