@@ -2,12 +2,24 @@ import { TShowCaseListDetails } from "@/components/ShowCaseList";
 
 export const EXPERIENCE: TShowCaseListDetails[] = [
   {
-    title: "Front End Developer",
+    title: "Web Developer",
+    organization: {
+      name: "Signum Concepts",
+      href: "https://signumconcepts.com/",
+    },
+    date: "Sep 2024 - Present",
+    location: "Islamabad",
+    review: "",
+    description:
+      "Signum Concepts work on a wide variety of creative digital projects, platforms, and campaigns to craft engaging experiences.",
+  },
+  {
+    title: "Full Stack Developer",
     organization: {
       name: "Beacon Techh",
       href: "https://beacontechh.com/",
     },
-    date: "july 2020 - Aug 2024",
+    date: "July 2020 - Aug 2024",
     location: "Islamabad",
     review: "What Beacon Techh Saying!",
     description:
